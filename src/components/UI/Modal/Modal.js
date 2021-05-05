@@ -6,7 +6,7 @@ class Modal extends Component {
 
     shouldComponentUpdate(nextProps,nextState){
         console.log('',nextProps,nextState);
-        return nextProps.show !== this.props.show;
+        return nextProps.show !== this.props.show || nextProps.children!==this.props.children; //add children check of nextState and props here to see spinnerz
     }
     
     componentWillUpdate(){
