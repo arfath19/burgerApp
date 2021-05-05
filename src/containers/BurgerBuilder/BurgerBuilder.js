@@ -110,7 +110,7 @@ class BurgerBuilder extends Component {
         this.setState({ totalPrice: newPrice, ingredients: updatedIngredients });
         this.updatePurchaseState(updatedIngredients);
 
-    };
+    }; 
 
     render() {
         const disabledInfo = {
